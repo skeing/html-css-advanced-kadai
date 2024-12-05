@@ -71,6 +71,10 @@ PC用のスタイル
 
 /* 画面幅が767px以下のとき */
 @media screen and (max-width: 767px) {
+  body{
+    min-width: 375px;
+    margin: 0;
+  }
 
   /* スマートフォン用のスタイルを指定する */
   /* PC用ナビゲーション非表示 */
@@ -80,11 +84,12 @@ PC用のスタイル
 
   /* ハンバーガーメニュー */
   #menu-sp {
-    display: block;
+    /* display: block;
     background-color: transparent;
+    border: none; */
     float: right;
     padding: 0;
-    border: none;
+    
   }
 
   /* スマホ用ナビゲーションの表示切替*/
@@ -124,11 +129,24 @@ PC用のスタイル
 
   #nav-sp a {
     display: block;
+    /* color: #ffffff; */
+  }
+
+  #nav-sp a:link {
+    color: #ffffff;
+  }
+
+  #nav-sp a:visited {
     color: #ffffff;
   }
 
   #nav-sp a:hover {
     text-decoration: underline;
+    color: #ffffff;
+  }
+
+  #nav-sp a:active {
+    color: #ffffff;
   }
 
   #nav-sp .menu {
